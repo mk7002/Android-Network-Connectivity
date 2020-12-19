@@ -32,6 +32,17 @@ public class Network {
                 settings.errorHandler);
     }
 
+    public static Observable<Boolean> observeInternetConnectivity(NetworkSettings settings) {
+        SocketConnectivity socketConnectivity = new SocketConnectivity();
+        return observeInternetConnectivity(socketConnectivity,
+                settings,
+                settings.host,
+                settings.port,
+                settings.timeout,
+                settings.httpResponse,
+                settings.errorHandler);
+    }
+
     public static Single<Boolean> checkInternetConnectivity(NetworkSettings settings) {
         SocketConnectivity socketConnectivity = new SocketConnectivity();
         return checkInternetConnectivity(socketConnectivity,
