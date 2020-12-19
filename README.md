@@ -80,3 +80,8 @@ NetworkSettings settings=new NetworkSettings.Builder()
             
 		  });
 ```
+If you get any error relate to rxjava , then add RxJava library inside your build.gradle(module) file 
+```css
+ 	implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
+    	implementation 'io.reactivex.rxjava3:rxjava:3.0.0'
+```
