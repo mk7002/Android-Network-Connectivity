@@ -1,0 +1,3 @@
+include ':app:networkConnectivityLibrary'
+include ':app'
+rootProject.name = "NetworkConnectivity"
