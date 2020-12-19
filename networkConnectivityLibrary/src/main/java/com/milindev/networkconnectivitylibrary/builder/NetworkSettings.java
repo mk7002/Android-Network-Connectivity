@@ -57,47 +57,56 @@ public final class NetworkSettings {
 
         };
 
-        public Builder(){
+        public Builder() {
 
         }
 
-        public void setInitialIntervalInMs(int initialIntervalInMs) {
+        public Builder setInitialIntervalInMs(int initialIntervalInMs) {
             this.initialIntervalInMs = initialIntervalInMs;
+            return this;
         }
 
-        public void setInterval(int interval) {
+        public Builder setInterval(int interval) {
             this.interval = interval;
+            return this;
         }
 
-        public void setDEFAULT_HOST(String DEFAULT_HOST) {
+        public Builder setDEFAULT_HOST(String DEFAULT_HOST) {
             this.DEFAULT_HOST = DEFAULT_HOST;
+            return this;
         }
 
-        public void setHTTP_PROTOCOL(String HTTP_PROTOCOL) {
+        public Builder setHTTP_PROTOCOL(String HTTP_PROTOCOL) {
             this.HTTP_PROTOCOL = HTTP_PROTOCOL;
+            return this;
         }
 
 
-        public void setHTTPS_PROTOCOL(String HTTPS_PROTOCOL) {
+        public Builder setHTTPS_PROTOCOL(String HTTPS_PROTOCOL) {
             this.HTTPS_PROTOCOL = HTTPS_PROTOCOL;
+            return this;
         }
 
 
-        public void setDEFAULT_TIMEOUT_IN_MILLIS(int DEFAULT_TIMEOUT_IN_MILLIS) {
+        public Builder setDEFAULT_TIMEOUT_IN_MILLIS(int DEFAULT_TIMEOUT_IN_MILLIS) {
             this.DEFAULT_TIMEOUT_IN_MILLIS = DEFAULT_TIMEOUT_IN_MILLIS;
+            return this;
         }
 
 
-        public void setErrorHandler(ErrorHandler errorHandler) {
+        public Builder setErrorHandler(ErrorHandler errorHandler) {
             this.errorHandler = errorHandler;
+            return this;
         }
 
-        public void setDEFAULT_PORT(int DEFAULT_PORT) {
+        public Builder setDEFAULT_PORT(int DEFAULT_PORT) {
             this.DEFAULT_PORT = DEFAULT_PORT;
+            return this;
         }
 
-        public void setHttpResponse(int httpResponse) {
+        public Builder setHttpResponse(int httpResponse) {
             this.httpResponse = httpResponse;
+            return this;
         }
 
         public NetworkSettings build() {
