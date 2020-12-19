@@ -1,8 +1,9 @@
 
 # Android-Network-Connectivity
 Android Networking Library listening for the Internet connectivity.
+
 [![](https://jitpack.io/v/mk7002/Android-Network-Connectivity.svg)](https://jitpack.io/#mk7002/Android-Network-Connectivity)
-(https://jitpack.io/#mk7002/Android-Network-Connectivity)(https://jitpack.io/#mk7002/Android-Network-Connectivity)
+
 
 
 ## Getting Started
@@ -71,7 +72,7 @@ NetworkSettings settings=new NetworkSettings.Builder()
         .setInterval(1)  
         .build(); 
          
-		disposable = Network  
+	disposable = Network  
         .observeInternetConnectivity(settings)  
         .subscribeOn(Schedulers.io())  
         .observeOn(AndroidSchedulers.mainThread())  
